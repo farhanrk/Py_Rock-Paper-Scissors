@@ -31,14 +31,14 @@ def main():
             elif (theCHOICE == "paper" or theCHOICE ==  "p" or theCHOICE == "papers"):
                 ##player papers
                 if(theCHOICE == "papers"):
-                    print("You want the power of all the paper in the realms but you only have one worthy of battle!")
+                    print("You want the power of all the paper in the realms but you only find one worthy of battle!")
                 else:
                     print("You manifest the power of nature into one formidable piece of PAPER~!")
                 if (theBOTpicks=="paper"):
                     print("Your PAPER swiftly moves in to strike the PAPER from the bot, but paper doesn't work against paper and the battle never starts forget about ending.")
                     print("TIE!")
                 elif (theBOTpicks=="rock"):
-                    print("Your righteous PAPER defeats the ROCK chosen by the bot like the Olympians trapping Kronos for eternity.")
+                    print("Your righteous PAPER entangles and defeats the ROCK chosen by the bot like the Olympians trapping Kronos for eternity.")
                     print("VICTORY!")
                 elif (theBOTpicks=="scissors"):
                     print("Your PAPER tries to subdue the ravenous hatred of the bot's SCISSORS, but alas is torn to shreds like Kratos's humanity was by Ares.")
