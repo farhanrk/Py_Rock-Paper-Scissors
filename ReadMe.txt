@@ -1,1 +1,3 @@
-rock paper scissors game?
+Trying to see if I still remmeber python
+
+A small rock paper scissors game
