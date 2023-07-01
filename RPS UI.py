@@ -84,13 +84,27 @@ title_label.grid(row=0, column=0, sticky="nsew")
 gif_frame = tk.Frame(window, bg="gray", padx=10, pady=10)
 gif_frame.grid(row=1, column=0, sticky="nsew")
 
-# Load the GIF file
-gif_image = Image.open("astral rock.gif")
-gif_photo = ImageTk.PhotoImage(gif_image)
+# Load and animate the GIF
+gif_image = Image.open("rock.gif")
+frames = []
+try:
+    while True:
+        frames.append(ImageTk.PhotoImage(gif_image.copy()))
+        gif_image.seek(len(frames))  # Move to the next frame
+except EOFError:  # Reached the end of the frames
+    pass
 
 # Create the label to display the GIF
-gif_label = tk.Label(gif_frame, image=gif_photo)
+gif_label = tk.Label(gif_frame)
 gif_label.pack()
+
+# Function to animate the GIF frames
+def animate_gif(frame_index):
+    gif_label.config(image=frames[frame_index])
+    window.after(50, animate_gif, (frame_index + 1) % len(frames))  # Delay in milliseconds
+
+# Start animating the GIF
+animate_gif(0)
 
 # Create the label for the current state of the Arena
 state_label = tk.Label(window, text="Current state of the Arena", font=("Arial", 12))
