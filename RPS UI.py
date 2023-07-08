@@ -135,7 +135,7 @@ strike_button.grid(row=5, column=0, sticky="nsew")
 quit_button = tk.Button(window, text="Quit", font=("Arial", 12))
 quit_button.grid(row=6, column=0, sticky="nsew")
 
-##
+
 #making a label
 # greeting = tk.Label(text="What do you want bro???")
 # title = tk.Label(
