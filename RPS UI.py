@@ -85,7 +85,7 @@ gif_frame = tk.Frame(window, bg="gray", padx=10, pady=10)
 gif_frame.grid(row=1, column=0, sticky="nsew")
 
 # Load and animate the GIF
-gif_image = Image.open("rock.gif")
+gif_image = Image.open("RockBEATScissors.gif")
 frames = []
 try:
     while True:
