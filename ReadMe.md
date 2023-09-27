@@ -3,5 +3,5 @@
 <h6 align="center">A UI version of the game is still in progress</h6><br>
 
 <br>
-A simple rock paper scissors game with mythological and historical references. Small personal project to teach myself python ui syntax. Run the Rock_paper_scissors.py for the text based game.
+A simple rock paper scissors game with mythological and historical references. Small personal project to teach myself python ui syntax. Run the Rock_Paper_Scissors.py for the text based game.
 
